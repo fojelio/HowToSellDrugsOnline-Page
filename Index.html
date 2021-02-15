@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Drugs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans:400,700" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="Icon" href="img/pildora 2.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="https://bootswatch.com/4/united/bootstrap.min.css">
+    <script src="Comments.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="if.js"></script>
+</head>
+<body background="img/Gris.png">
+    <!--login-->
+
+      <!--Inicio-->
+    <header class="site-header">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="/">
+                    <h1 class="no-margin">My<span>Drugs</span></h1>
+                </a>
+                <nav class="navegacion">
+                    <a href="Usuario.html">Log In (Only Owners)</a>
+                    <a href="Productos.html">Productos</a>
+                    <a href="contacto.html">Pagos</a>
+                </nav>
+            </div><!--barra-->
+            <div class="imagen-header2">
+                <img src="img/My Drugs2.png" alt="">
+            </div>
+
+        </div><!--contenedor-->
+    </header>
+<div>
+    <h2 style="color: aliceblue; font-size: xx-large;">Nuestros Productos</h2>
+    <hr color="black" size=2000 width="1900">
+</div>
+    <main>
+        <div class="thumbnail">
+        <ul class="lista-productos">
+            <li>
+                <img src="img/1.jpg" alt="producto">
+                <p style="color: aliceblue;">Love <span class="precio">$12</span></p>
+                <p><a href="Love.html" class="btn btn-primary" role="button">Ver</a> 
+			<a href="#" class="btn btn-default producto" precio="12" style="color: blueviolet;" titulo="Love" role="button">Comprar</a></p>
+            </li>
+            <li>
+                <img src="img/2.jpg" alt="producto">
+                <p style="color: aliceblue;">Love Word <span class="precio">$12</span></p>
+                <p><a href="Love word.html" class="btn btn-primary" role="button">Ver</a> 
+			<a href="#" class="btn btn-default producto" precio="12" style="color: blueviolet;" titulo="Love Word" role="button">Comprar</a></p>
+            </li>
+            <li>
+                <img src="img/3.jpg" alt="producto">
+                <p style="color: aliceblue;">Love Me <span class="precio">$12</span></p>
+                <p><a href="Love Me.html" class="btn btn-primary" role="button">Ver</a> 
+			<a href="#" class="btn btn-default producto" precio="12" style="color: blueviolet;" titulo="Love Me" role="button">Comprar</a></p>
+            </li>
+            <li>
+                <img src="img/4.jpg" alt="producto">
+                <p style="color: aliceblue;">Mortal <span class="precio">$12</span></p>
+                <p><a href="Mortal.html" class="btn btn-primary" role="button">Ver</a> 
+			<a href="#" class="btn btn-default producto" precio="12" style="color: blueviolet;" titulo="Mortal" role="button">Comprar</a></p>
+            </li>
+            <li>
+                <img src="img/6.jpg" alt="producto">
+                <p style="color: aliceblue;">Dollar <span class="precio">$12</span></p>
+                <p><a href="Dollar.html" class="btn btn-primary" role="button">Ver</a> 
+			<a href="#" class="btn btn-default producto" precio="12" style="color: blueviolet;" titulo="Dollar" role="button">Comprar</a></p>
+            </li>
+            <li>
+                <img src="img/8.png" alt="producto">
+                <p style="color: aliceblue;">Main <span class="precio">$12</span></p>
+                <p><a href="Main.html" class="btn btn-primary" role="button">Ver</a> 
+			<a href="#" class="btn btn-default producto" precio="12" style="color: blueviolet;" titulo="Main" role="button">Comprar</a></p>
+            </li>
+            
+        </ul>
+    </div>
+    </main>
+    </div><!--contenido-principal-->
+
+    <footer class="footer-sitio2">
+        <div class="contenedor clearfix">
+            </section>
+            <section class="menu">
+              
+                <nav>
+                   
+                </nav>
+            </section>
+        </div>
+        <p class="copyright2" style="font-size: x-large;">COMENTARIOS ANONIMOS</p>
+    </footer>
+
+    <script src="minicart.js"></script>
+	<script>
+       
+
+
+	  // configuración inicial del carrito 
+	  paypal.minicart.render({
+	  strings:{
+	    button:'Pagar'
+	   ,buttonAlt: "Total"
+	   ,subtotal: 'Total:'
+	   ,empty: 'No hay productos en el carrito'
+	  }
+	  });
+	  // Eventos para agregar productos al carrito
+	  
+	   $('.producto').click(function(e){
+	       e.stopPropagation();
+		    paypal.minicart.cart.add({
+			business: 'mj_mdp@yahoo.com.ar', // Cuenta paypal para recibir el dinero
+			item_name: $(this).attr("titulo"),
+			 amount: $(this).attr("precio"),
+			 currency_code: 'USD',
+			
+			});
+	   });
+	  
+    </script>
+    </body>
+    <!--Comentarios-Anonimos-->
+   <!-- begin wwww.htmlcommentbox.com -->
+ <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com" style="font-size: xx-large;">Comment Box</a> is loading comments...</div>
+ <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24qpNwoo2xvAJJuyubB%2FU%2FK1"+"&opts=16862&num=10&ts=1596240905638");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end www.htmlcommentbox.com -->
+<footer class="footer-sitio">
+    <div class="contenedor clearfix">
+        </section>
+        <section class="menu">
+          
+            <nav>
+               
+            </nav>
+        </section>
+    </div>
+    <p class="copyright">MyDrugs - Todos los derechos Reservados 2020 &copy;</p>
+</footer>
+
+</html>
