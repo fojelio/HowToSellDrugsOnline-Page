@@ -1,0 +1,88 @@
+0.0.8
+-----
+* sorting empty database fixed. (thanks Rebecca Castonguay)
+* other minor bugfixes.
+
+0.0.7
+-----
+* "order by" now works properly.
+
+0.0.6
+-----
+* no longer the rump-roast package, just TextDB.
+* basic SQL select statements!
+* fixed a problem with bin2dec, where it wasn't converting the numbers over
+  properly in certain cases, which was causing major screw-ups.
+* many bugfixes.
+
+0.0.5
+-----
+* no release, less confusing.
+
+0.0.5pr3
+--------
+* fixed a bug where the first comment wouldn't be added.
+* fixed a problem with erase(), thanks Paul Ellender for finding
+  and fixing it.
+* added file locking.
+
+0.0.5pr2
+--------
+* new filesystem, more flexible.
+* new function, TextDB->convert() which converts old filesystem files
+  to the new filesystem.
+* new function, TextDB->tdbconv() which converts between the three types,
+  str, arr, and int and outputs the "raw data".
+* when editing fields, it tries to convert the existing data to the new
+  type, if possible.
+* old article system deprecated by new filesystem.
+
+0.0.5pr1
+--------
+* now compatible with php3! (still works with php4)
+* fixed some minor bugs while converting to php3
+  compatible code.
+
+0.0.4sr2
+--------
+* fixed a problem in firstrun.php which wasn't encrypting
+  the password for those using the mcrypt libs.
+
+0.0.4sr1
+--------
+* added $usemcrypt in glob.inc.php instead of having two
+  different versions.
+* fixed a _major_ bug in tdb.inc.php which wasn't properly
+  add/editing records.
+
+0.0.4
+-----
+* beginnings of comments section.
+* fglob.inc.php renamed to glob.inc.php.
+* global.css file actually included now.
+* two new images added for the comments section.
+* beginnings of article/content display.
+* the little "current content" thingy now works.
+* some minor bug fixes.
+* ability to compact database(s).
+* can now add/edit/delete fields in db tables.
+* fixed a problem in users.php which wasn't letting you
+  modify your prefs.
+* a bit of prettying things up.
+
+0.0.3
+-----
+* oops. dumb me. the encryption key is now a global variable
+  stored in fglob.inc.php
+
+0.0.2
+-----
+* many bugfixes.
+* new commands added to the class.
+* new admin page.
+* old unused files deleted.
+* beginning of users.
+
+0.0.1
+-----
+* initial release.
