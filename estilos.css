@@ -1,0 +1,380 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** 1rem = 10px **/
+    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+/** Globales **/
+
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+h1, h2, h3, h4 {
+    font-family: 'PT Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    font-size: 6rem;
+    line-height: 1.2;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
+}
+/** Utilidades **/
+.centrar-texto {
+    text-align: center;
+}
+.no-margin {
+    margin: 0;
+}
+
+/** Header **/
+@media (min-width:768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.site-header {
+    background-image: url(../img/Negro.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 60rem;
+}
+.site-header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.site-header h1 {
+    text-align: center;
+    font-weight: 400;
+}
+.site-header h1 span {
+    font-weight: 700;
+}
+/** Navegacion **/
+.navegacion a {
+    text-align: center;
+    display: block;
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+@media (min-width: 768px) {
+    .navegacion a {
+        display: inline;
+        margin-right: 2rem;
+    }
+    .navegacion a:last-of-type {
+        margin: 0;
+    }
+}
+.lista-productos {
+    padding: 0;
+    list-style: none;
+}
+.lista-productos li {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    margin-left: 17rem;
+   
+    text-align: center;
+}
+/** 2(0) + 1 **/
+.lista-productos li:nth-child(2n+1) {
+    clear: both;
+}
+@media (min-width:768px){
+    .lista-productos li {
+        
+        width: 20.3%;
+    }
+    .lista-productos li:nth-child(2n+1) {
+        clear: unset;
+    }
+    .lista-productos li:nth-child(3n+1) {
+        clear: both;
+    }
+}
+
+.lista-productos li img{
+    
+    border: 10px solid rgba(241, 7, 202, 0.45);
+    transition: border-color .2s ease-in-out;
+}
+.lista-productos li img:hover {
+    
+    border: 10px solid rgb(0, 0, 0);
+}
+.lista-productos li p {
+    
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+span.precio {
+    color: #000000;
+    font-size: 25px;
+}
+.boton {
+    background-color: #ffffff;
+    padding: 10px 40px;
+    margin-top: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+   text-decoration: none;
+    font-weight: bold;
+    color: #020102;
+    transition: background-color .3s ease-in-out;
+}
+.boton:hover {
+    background-color: red;
+}
+/** Botones **/
+
+
+
+/** Contacto **/
+.formulario-contacto {
+    background-color: #ffffff;
+    padding: 5rem;
+}
+@media (min-width: 768px) {
+    .formulario-contacto {
+        margin-top: -10rem;
+    }
+}
+.formulario-contacto .campo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.formulario-contacto .campo label {
+    flex: 0 0 8rem;
+}
+.formulario-contacto .campo input:not([type="submit"]),
+.formulario-contacto textarea{
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
+.formulario-contacto textarea {
+    height: 20rem;
+}
+.formulario-contacto .enviar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/** Footer **/
+
+.footer-sitio {
+    background-color: #242424;
+    padding-top: 40px;
+    margin-top: 60px;
+    color: #ffffff;
+    text-align: center;
+}
+.footer-sitio h2 {
+    color: #ffffff;
+}
+.footer-sitio a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    margin-right: 20px;
+}
+.footer-sitio a:last-of-type{
+    margin-right: 0;
+}
+@media (min-width:768px){
+    .footer-sitio .nosotros {
+        float: left;
+        width: 30%;
+        text-align: left;
+    }
+    .footer-sitio .menu {
+        float: right;
+        width: 50%;
+        text-align: right;
+    }
+}
+.copyright {
+    background-color: #b10474;
+    margin: 50px 0 0 0;
+    padding: 20px 0;
+} 
+
+.footer-sitio2 {
+    background-color: #242424;
+    padding-top: 40px;
+    margin-top: 60px;
+    color: #ffffff;
+    text-align: center;
+}
+.footer-sitio2 h2 {
+    color: #ffffff;
+}
+.footer-sitio2 a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    margin-right: 20px;
+}
+.footer-sitio2 a:last-of-type{
+    margin-right: 0;
+}
+@media (min-width:768px){
+    .footer-sitio2 .nosotros {
+        float: left;
+        width: 30%;
+        text-align: left;
+    }
+    .footer-sitio2 .menu {
+        float: right;
+        width: 50%;
+        text-align: right;
+    }
+}
+.copyright2 {
+    background-color: #000;
+    margin: 50px 0 0 0;
+    padding: 20px 0;
+} 
+
+
+.login-box {
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+  }
+  
+ 
+  
+  .login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  .login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .login-box input[type="text"], .login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #b80f22;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  
+  .login-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+  }
+  
+  .login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+  }
+  
+  .login-box a:hover {
+    color: #fff;
+  }
+
+  hr {
+    border-bottom: 5px solid #b10474;
+    background-color: #3D3D3D;
+    height: 60px;
+  }
+  .lovetext{
+    font-size: x-large;
+    color: aliceblue;
+    border-width: 1rem;
+  }
+ 
+
+  #HCB_comment_box #hcb_form_content,
+  #HCB_comment_box #hcb_form_email,
+  #HCB_comment_box #hcb_form_name,
+  #HCB_comment_box #hcb_form_website {
+    background-color: white;
+  }
+  #HCB_comment_box textarea {
+    height:400px;
+  }
+  #HCB_comment_box blockquote {
+    color:rgb(255, 255, 255);
+  }
+  #HCB_comment_box .text-blur {
+    color:rgb(255, 255, 255);
+  }
+  #HCB_comment_box .text-focus {
+    color:rgb(255, 255, 255);
+  }
+  #HCB_comment_box .submit {
+    background:none; 
+    background-color:green;
+    border:1px solid darkgreen;
+    color: black;
+  }
+  #HCB_comment_box {
+    color:white;
+  }
+  input#hcb_form_name {
+    color:blue;
+    font-size:40px;
+    background-color:darkgreen;
+  }
